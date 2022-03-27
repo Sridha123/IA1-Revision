@@ -1,5 +1,4 @@
-
- gcc -g p2final.c
+final.c
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
@@ -19,7 +18,7 @@ Reading symbols from a.out...done.
 (gdb) b main
 Breakpoint 1 at 0x860: file p2final.c, line 27.
 (gdb) r
-Starting program: /home/runner/IA1-Revision-1/a.out 
+Starting program: /home/runner/IA1-Revision-3/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p2final.c:27
@@ -37,9 +36,9 @@ enter a number
 3
 30    l=cmp(a,b,c);
 (gdb) n
-C is big
+c is big
 31    return 0;
 (gdb) c
 Continuing.
-[Inferior 1 (process 234) exited normally]
+[Inferior 1 (process 2748) exited normally]
 (gdb) 
