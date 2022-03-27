@@ -12,7 +12,6 @@ Type "show configuration" for configuration details.
 For bug reporting instructions, please see:
 <http://www.gnu.org/software/gdb/bugs/>.
 Find the GDB manual and other documentation resources online at:
----Type <return> to continue, or q <return> to quit---
 <http://www.gnu.org/software/gdb/documentation/>.
 For help, type "help".
 Type "apropos word" to search for commands related to "word"...
@@ -20,7 +19,7 @@ Reading symbols from a.out...done.
 (gdb) b main
 Breakpoint 1 at 0x894: file p4final.c, line 37.
 (gdb) r
-Starting program: /home/runner/IA1-Revision-1/a.out 
+Starting program: /home/runner/IA1-Revision-3/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p4final.c:37
@@ -30,8 +29,7 @@ Breakpoint 1, main () at p4final.c:37
 (gdb) n
 39    n=input_array_size();
 (gdb) n
-Enter the size of the array: 
-3
+Enter the size of the array:3
 40    a[i]=input_array(n,a);
 (gdb) n
 Enter the number:1
@@ -41,14 +39,12 @@ Enter the number:11
 (gdb) n
 42    output(n,a,sum);
 (gdb) n
-43  }(gdb) n
-__libc_start_main (main=0x55d73220088b <main>, argc=1, 
-    argv=0x7ffc049e32c8, init=<optimized out>, fini=<optimized out>, 
-    rtld_fini=<optimized out>, stack_end=0x7ffc049e32b8)
-    at ../csu/libc-start.c:344
+43    }
+(gdb) n
+__libc_start_main (main=0x55663220088b <main>, argc=1, argv=0x7fff165295b8, 
+    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7fff165295a8) at ../csu/libc-start.c:344
 344 ../csu/libc-start.c: No such file or directory.
 (gdb) n
-1+2+11 is 19[Inferior 1 (process 31) exited normally]
+1+2+11 is 19[Inferior 1 (process 7954) exited normally]
 (gdb) n
-The program is not being run.
-(gdb) 
